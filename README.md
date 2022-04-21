@@ -1,0 +1,1 @@
+# Terraform to create EC2 instance in AWS
