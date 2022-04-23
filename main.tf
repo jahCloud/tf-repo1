@@ -8,6 +8,7 @@ provider "aws" {
 resource "aws_security_group" "my_security_group" {
   name        = var.security_group
   description = "SG for EC2 instance"
+  vpc_id      = var.vpc_id
 
   ingress {
     from_port   = 8080
