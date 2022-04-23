@@ -9,6 +9,8 @@ variable "secret_key" {}
 
 variable "vpc_id" {}
 
+variable "subnet_id" {}
+
 variable "key_name" {
   description = "Key Pair"
   default     =  "KP-win2022-Jenkins-MASTER-us-east-1"
