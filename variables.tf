@@ -3,6 +3,10 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
+variable "access_key" {}
+
+variable "secret_key" {}
+
 variable "key_name" {
   description = "Key Pair"
   default     =  "KP-win2022-Jenkins-MASTER-us-east-1"
