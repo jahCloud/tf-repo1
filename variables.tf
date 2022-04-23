@@ -3,13 +3,21 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
-variable "access_key" {}
+variable "access_key" {
+  type = string
+}
 
-variable "secret_key" {}
+variable "secret_key" {
+  type = string
+}
 
-variable "vpc_id" {}
+variable "vpc_id" {
+  type = string
+}
 
-variable "subnet_id" {}
+variable "subnet_id" {
+  type = string
+}
 
 variable "key_name" {
   description = "Key Pair"
