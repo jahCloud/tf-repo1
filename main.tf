@@ -42,7 +42,8 @@ resource "aws_instance" "my_instance" {
   ami                    = data.aws_ami.AMIWindows.id
   key_name = var.key_name
   instance_type = var.instance_type
-  security_groups= [var.security_group]
+  subnet_id = var.subnet_id
+  vpc_security_group_ids= [var.security_group]
   tags= {
     Name = var.tag_name
   }
