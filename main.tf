@@ -43,7 +43,7 @@ resource "aws_instance" "my_instance" {
   key_name = var.key_name
   instance_type = var.instance_type
   subnet_id = var.subnet_id
-  vpc_security_group_ids= [var.security_group]
+  vpc_security_group_ids= [aws_security_group.my_security_group.id]
   tags= {
     Name = var.tag_name
   }
